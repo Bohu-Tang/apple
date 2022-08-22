@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="index-page">
+<view class="page-title">价格</view>
+  <view class="chart-container">
+    <ec-canvas wx:if="{{!isDisposed}}" id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+  </view>
+  <view class="apple-type">
+      <van-button plain type="primary" size="small" wx:for="{{typeList}}" wx:key="index">{{item.name}}</van-button>
+  </view>
+  <view>
+    <button bindtap="init" wx:if="{{!isLoaded}}">加载图表</button>
+    <button bindtap="dispose" wx:if="{{isLoaded && !isDisposed}}">释放图表</button>
+  </view>
+</view>

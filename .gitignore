@@ -1,0 +1,8 @@
+.dist/
+.temp/
+.rn_temp/
+node_modules/
+miniprogram_npm/
+.DS_Store
+yarn.lock
+package-lock.json

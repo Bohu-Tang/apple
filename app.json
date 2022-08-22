@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index"
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#7ed6df",
+
+    "navigationBarTitleText": "测试",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}
